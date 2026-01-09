@@ -1,0 +1,47 @@
+import {test, expect} from "@playwright/test"
+
+const loginTestData:string[][]=[
+    ["laura.taylor1234@example.com","test123","valid"],
+    ["invaliduser@example.com","test321","invalid"],
+    ["validuser@example.com","textxyz","invalid"],
+    ["","","invalid"]
+];
+
+test.describe("Login data driven test", ()=>{
+
+
+for (const [email,pass,validity] of loginTestData) {
+    
+   
+
+        
+test(`Login test for ${email} and ${pass}`, async({page})=>{
+
+    await page.goto("https://demowebshop.tricentis.com/login");
+    await page.locator("#Email").fill(email);
+    await page.locator("#Password").fill(pass);
+    await page.locator("input[value='Log in']").click();
+
+    if(validity.toLowerCase()==='valid'){
+
+        // Assert logout link is visible indicate successful login
+        const logoutLink = page.locator("a[href='/logout']");
+        await expect(logoutLink).toBeVisible({timeout:5000});
+
+    }
+    else{
+        // assert error message is visible
+        const errormessage=page.locator('.validation-summary-errors');
+        await expect (errormessage).toBeVisible({timeout:5000});
+
+        // assert user is still on the login page
+        await expect(page).toHaveURL("https://demowebshop.tricentis.com/login")
+  
+    }
+})
+   
+
+
+}
+
+});

@@ -1,0 +1,164 @@
+<testsuites id="" name="" tests="9" failures="3" skipped="0" errors="0" time="80.063731">
+<testsuite name="reporter.spec.ts" timestamp="2026-01-02T09:53:41.176Z" hostname="chromium" tests="3" failures="1" skipped="0" time="28.122" errors="0">
+<testcase name="logotest" classname="reporter.spec.ts" time="10.762">
+<system-out>
+<![CDATA[...........................Launching app...............................
+...........................closing app...............................
+]]>
+</system-out>
+</testcase>
+<testcase name="title test" classname="reporter.spec.ts" time="5.866">
+<failure message="reporter.spec.ts:18:5 title test" type="FAILURE">
+<![CDATA[  [chromium] › reporter.spec.ts:18:5 › title test ──────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      19 |     console.log(await page.title());
+      20 |     
+    > 21 |      expect(await page.title()).toContain("Demo Web Shop1");
+         |                                 ^
+      22 | });
+      23 |
+      24 | test("Search test", async({page})=>{
+        at C:\PWDemoes\tests\reporter.spec.ts:21:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\reporter-title-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporter-title-test-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[...........................Launching app...............................
+Demo Web Shop
+...........................closing app...............................
+
+[[ATTACHMENT|test-results\reporter-title-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reporter-title-test-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search test" classname="reporter.spec.ts" time="11.494">
+<system-out>
+<![CDATA[...........................Launching app...............................
+...........................closing app...............................
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="reporter.spec.ts" timestamp="2026-01-02T09:53:41.176Z" hostname="firefox" tests="3" failures="1" skipped="0" time="19.892" errors="0">
+<testcase name="logotest" classname="reporter.spec.ts" time="6.518">
+<system-out>
+<![CDATA[...........................Launching app...............................
+...........................closing app...............................
+]]>
+</system-out>
+</testcase>
+<testcase name="title test" classname="reporter.spec.ts" time="6.103">
+<failure message="reporter.spec.ts:18:5 title test" type="FAILURE">
+<![CDATA[  [firefox] › reporter.spec.ts:18:5 › title test ───────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      19 |     console.log(await page.title());
+      20 |     
+    > 21 |      expect(await page.title()).toContain("Demo Web Shop1");
+         |                                 ^
+      22 | });
+      23 |
+      24 | test("Search test", async({page})=>{
+        at C:\PWDemoes\tests\reporter.spec.ts:21:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\reporter-title-test-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporter-title-test-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[...........................Launching app...............................
+Demo Web Shop
+...........................closing app...............................
+
+[[ATTACHMENT|test-results\reporter-title-test-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reporter-title-test-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search test" classname="reporter.spec.ts" time="7.271">
+<system-out>
+<![CDATA[...........................Launching app...............................
+...........................closing app...............................
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="reporter.spec.ts" timestamp="2026-01-02T09:53:41.176Z" hostname="webkit" tests="3" failures="1" skipped="0" time="30.567" errors="0">
+<testcase name="logotest" classname="reporter.spec.ts" time="11.094">
+<system-out>
+<![CDATA[...........................Launching app...............................
+...........................closing app...............................
+]]>
+</system-out>
+</testcase>
+<testcase name="title test" classname="reporter.spec.ts" time="11.569">
+<failure message="reporter.spec.ts:18:5 title test" type="FAILURE">
+<![CDATA[  [webkit] › reporter.spec.ts:18:5 › title test ────────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      19 |     console.log(await page.title());
+      20 |     
+    > 21 |      expect(await page.title()).toContain("Demo Web Shop1");
+         |                                 ^
+      22 | });
+      23 |
+      24 | test("Search test", async({page})=>{
+        at C:\PWDemoes\tests\reporter.spec.ts:21:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\reporter-title-test-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporter-title-test-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[...........................Launching app...............................
+Demo Web Shop
+...........................closing app...............................
+
+[[ATTACHMENT|test-results\reporter-title-test-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reporter-title-test-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search test" classname="reporter.spec.ts" time="7.904">
+<system-out>
+<![CDATA[...........................Launching app...............................
+...........................closing app...............................
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

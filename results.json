@@ -1,0 +1,619 @@
+{
+  "config": {
+    "configFile": "C:\\PWDemoes\\playwright.config.ts",
+    "rootDir": "C:/PWDemoes/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "always",
+          "outputFolder": "html-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\PWDemoes\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/PWDemoes/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/PWDemoes/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/PWDemoes/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/PWDemoes/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/PWDemoes/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/PWDemoes/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "reporter.spec.ts",
+      "file": "reporter.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "logotest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10762,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:53:43.236Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-ebe40713e3f8bc6bcd2f",
+          "file": "reporter.spec.ts",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "title test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 5866,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n    at C:\\PWDemoes\\tests\\reporter.spec.ts:21:33",
+                    "location": {
+                      "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                      "column": 33,
+                      "line": 21
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m      expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"Search test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                        "column": 33,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m      expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"Search test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[2m    at C:\\PWDemoes\\tests\\reporter.spec.ts:21:33\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "Demo Web Shop\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:53:42.924Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PWDemoes\\test-results\\reporter-title-test-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\PWDemoes\\test-results\\reporter-title-test-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                    "column": 33,
+                    "line": 21
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-aaba3d47480a9b80dd83",
+          "file": "reporter.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Search test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 11494,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:53:43.088Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-1765581dc6d4779ac045",
+          "file": "reporter.spec.ts",
+          "line": 24,
+          "column": 5
+        },
+        {
+          "title": "logotest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6518,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:54:15.597Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-16453cf8b61221996464",
+          "file": "reporter.spec.ts",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "title test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6103,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n    at C:\\PWDemoes\\tests\\reporter.spec.ts:21:33",
+                    "location": {
+                      "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                      "column": 33,
+                      "line": 21
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m      expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"Search test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                        "column": 33,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m      expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"Search test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[2m    at C:\\PWDemoes\\tests\\reporter.spec.ts:21:33\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "Demo Web Shop\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:54:15.474Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PWDemoes\\test-results\\reporter-title-test-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\PWDemoes\\test-results\\reporter-title-test-firefox\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                    "column": 33,
+                    "line": 21
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-286c69825b8f8bfa7db4",
+          "file": "reporter.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Search test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 7271,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:54:16.664Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-21c9251e760788732212",
+          "file": "reporter.spec.ts",
+          "line": 24,
+          "column": 5
+        },
+        {
+          "title": "logotest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11094,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:54:42.543Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-aa6590b4de8bc4ff8634",
+          "file": "reporter.spec.ts",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "title test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 11569,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n    at C:\\PWDemoes\\tests\\reporter.spec.ts:21:33",
+                    "location": {
+                      "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                      "column": 33,
+                      "line": 21
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m      expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"Search test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                        "column": 33,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m      expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"Search test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[2m    at C:\\PWDemoes\\tests\\reporter.spec.ts:21:33\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "Demo Web Shop\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:54:42.360Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PWDemoes\\test-results\\reporter-title-test-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\PWDemoes\\test-results\\reporter-title-test-webkit\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\PWDemoes\\tests\\reporter.spec.ts",
+                    "column": 33,
+                    "line": 21
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-f9cf0531c7e2cd527147",
+          "file": "reporter.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Search test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7904,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "...........................Launching app...............................\n"
+                    },
+                    {
+                      "text": "...........................closing app...............................\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-02T09:54:40.247Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6007774aebff37e7150b-e0398410dec602028f6c",
+          "file": "reporter.spec.ts",
+          "line": 24,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-02T09:53:41.046Z",
+    "duration": 80063.731,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
